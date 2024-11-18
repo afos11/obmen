@@ -16,7 +16,7 @@ def exchange():
             if code in data ['rates']: #сущ та валюта которую ввел пользователь
                 exchange_rate=data['rates'][code] #курс обмена exchange_rate выбираем словарь data['rates'] значение по ключу [code]
                 mb.showinfo('Курс обмена',
-                            f'Курс к доллару: {exchange_rate} {code} за 1 доллар.')
+                            f'Курс к доллару: {exchange_rate:.2f} {code} за 1 доллар.')
             else:
                 mb.showerror('Ошибка', f'Такая валюта  {code}не найдена')
 
